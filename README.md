@@ -1,1 +1,0 @@
-# sekkamin.github.io
