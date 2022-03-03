@@ -56,38 +56,25 @@
         wow.init();
 
         $(document).ready(function() {
-            let date = new Date(2022, 4, 23);
+            let date = new Date("04/23/2022");
             let currentDate = new Date();
-
-            let result = date - currentDate;
-            let misec = 24 * 60 * 60 * 1000;
-
-            result = (result <= 0)? 0 : (parseInt(result / misec) + 1);
-
-            $("#d-day").html(result);
+            var Difference_In_Time = date.getTime() - currentDate.getTime();
+            var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+            $("#d-day").html(parseInt(Difference_In_Days));
         });
     </script>
 </head>
 <body class="text-center">
 <div class="top-div">
-    <header class="wow fadeInUp inner cover cover-container d-flex w-100 h-100 p-3 flex-column">
+    <header class="wow fadeInUp d-flex w-100 h-100 p-3 flex-column">
     </header>
     <main role="main" class="inner">
         <div class="wow fadeInUp">
             <p class="top-title">Min Park · Sekka Han</p>
-            <p class="top-title-sub">23 / 04 / 2022 Saturday 06:00 PM</p>
-            <p class="top-title-sub">Westin Josun Hotel - Grand Bloom Hall</p>
+            <p class="top-title-sub">2022 / 04 / 23 Saturday 06:00 PM</p>
+            <p class="top-title-sub">Westin Josun Hotel - Grand Ballroom</p>
             <br/><br/><br/>
             <hr class="cover-container"/>
-            <br/>
-        </div>
-        <div class="wow fadeInUp">
-            <p class="section1-title section1-main">
-                I love you not only for what you are, <br/>
-                but for what I am when I am with you.
-                <br/><br/>
-                - Elizabeth Barrett Browning -
-            </p>
             <br/>
         </div>
         <div class="wow fadeInUp">
@@ -102,35 +89,33 @@
         <hr class="cover-container"/>
         <br/>
         <p class="wow fadeInUp section2-title section2-main inner cover cover-container d-flex w-100 h-100 p-5 mx-auto flex-column">
-            For those of you<br/>
-            Who are planning to join our wedding
+            To our beloved friends and guests<br/>
         </p>
         <p class="wow fadeInUp section2-title section2-sub inner cover cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
-            Greetings from Min & Sekka.<br/>
+            Greetings from Min & Sekka!<br/>
             <br/>
             Due to the current COVID-19 situation,<br/>
             we fully understand even though you <br/>
-            cannot make it to our wedding. <br/>
+            cannot make it our wedding. <br/>
             <br/>
-            Your safety is our top most priority.<br/>
-            If you have already booked your travel<br/>
-            Please do not hesitate to cancel your trip<br/>
-            in case the situation doesn't seem to be eased<br/>
+            Your safety is our top most priority<br/>
+            and we would be happy to receive <br/>
+            your blessing even from a far distance<br/>
             <br/>
-            Instead, send your blessing from your home.<br/>
-            We would be happy to receive your blessing<br/>
-            even from the far distance<br/>
+            For friends who have already <br/>
+            booked your travel,<br/>
+            we will keep you updated about the current <br/>
+            requirements to enter South Korea.<br/>
             <br/>
-            We will keep update the current travel  <br/>
-            restriction status to enter South Korea. <br/>
-            Please check the section below in regular basis<br/>
+            Kindly check the section below <br/> 
+            for the latest requirement.  <br/>
             <br/>
+            With love,<br/>
             Min & Sekka
         </p>
         <br/>
         <p class="wow fadeInUp restriction-title restriction-main inner cover cover-container d-flex w-100 h-100 p-5 mx-auto flex-column">
-            Latest travel restriction info <br/>
-            to enter South Korea
+            Latest guideline to enter South Korea <br/>
         </p>
         <p class="wow fadeInUp restriction-info section2-sub inner cover cover-container d-flex w-100 h-100 p-2 mx-auto flex-column font-weight-bold">
             Quarantine Period : 7 days<br/>
@@ -173,31 +158,6 @@
                         &nbsp&nbsp&nbsp
                     </div>
                 </div>
-                <br/>
-                <div class="row" style="margin-top:1rem; margin-bottom: 1rem">
-                    <div class="col-6 section4-sec1-2">
-                        <span class="section4-sec1">Groom's Family</span>
-                    </div>
-                    <div class="col section4-sec1-2">
-                        <span class="section4-sec1">Bride's Family</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 section4-sec1-2">
-                        <span class="section4-sec1">Mr.</span>
-                        &nbsp&nbsp&nbsp
-                        <span class="section4-sec2">Park</span>
-                        <br/>
-                        <span class="section4-sec1">Mrs.</span>
-                        &nbsp&nbsp&nbsp
-                        <span class="section4-sec2">Kim</span>
-                    </div>
-                    <div class="col section4-sec1-2">
-                        <span class="section4-sec1">Mr.</span>&nbsp&nbsp&nbsp<span class="section4-sec2">Han</span>
-                        <br/>
-                        <span class="section4-sec1">Mrs.</span>&nbsp&nbsp&nbsp<span class="section4-sec2">Nou</span>
-                    </div>
-                </div>
             </div>
             <br/><br/>
         </div>
@@ -206,7 +166,7 @@
         <div class="wow fadeInUp section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <br/>
             <p class="section5-title section5-main">Wedding Date</p>
-            <p class="section5-title section5-sub" style="margin-top: 0;">23 / 04 / 2022 Saturday 06:00 PM</p>
+            <p class="section5-title section5-sub" style="margin-top: 0;">2022 / 4 / 23 Saturday 06:00 PM</p>
             <table class="wow fadeInUp section5-title section5-table">
                 <tr>
                     <td class="sun">S</td>
@@ -272,7 +232,7 @@
             <br/>
             <p class="wow fadeInUp section6-title section6-main">Location</p>
             <div class="wow fadeInUp  section6-title">
-                <p class="section6-location-main" style="margin-bottom: 0;">Westin Josun Hotel - Grand Bloom Hall</p>
+                <p class="section6-location-main" style="margin-bottom: 0;">Westin Josun Hotel - Grand Ballroom</p>
                 <p class="section6-location-sub" style="text-align: center;">
                     106, Sogong-ro, Jung-gu, Seoul <br/>
                     South Korea,04533
